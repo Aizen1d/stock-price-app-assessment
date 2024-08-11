@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import Container from "@/components/shared/Container";
+import AOS from "@/components/shared/AOS";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-BACKGROUND`}>
+        <AOS/>
+        
         <Container>
           <Header/>
           {children}

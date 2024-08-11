@@ -83,7 +83,7 @@ const Data = () => {
   }
 
   return (
-    <main className="lg:h-[calc(65vh-1rem)]">
+    <main className="lg:h-[calc(65vh-1rem)]" data-aos="fade-up">
       <form onSubmit={handleSubmit}>
         <div className="flex justify-center items-center">
           <div className="bg-CARD_BG w-full lg:w-fit pl-5 pr-5 py-5 rounded-xl shadow-md space-y-2">

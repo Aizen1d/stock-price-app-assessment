@@ -2,7 +2,7 @@ import React from 'react'
 
 const Acknowledgement = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-28 gap-y-3">
+    <div className="flex flex-col justify-center items-center mt-28 gap-y-3" data-aos="fade-up">
       <h1 className="text-center text-5xl font-extrabold text-BLACK_LABEL_TEXT">
         Powered by
         <br/>

@@ -10,7 +10,7 @@ export default async function page() {
         <Hero/>
       </div>
       
-      <div id="data-section" className="flex justify-center items-center mt-5 pt-20">
+      <div id="data-section" className="flex justify-center items-center mt-5 pt-20" data-aos="fade-up">
         <h1 className="text-center text-5xl font-extrabold text-BLACK_LABEL_TEXT">Real-time Stock Price Search</h1>
       </div>
 

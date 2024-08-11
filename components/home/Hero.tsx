@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="flex flex-col lg:flex-row w-full
                     lg:justify-between lg:items-center lg:px-16
                     gap-y-5 lg:gap-y-0 h-fit lg:h-[calc(90vh-1rem)]">
-      <section className="w-full lg:w-1/2 space-y-3 lg:space-y-1">
+      <section className="w-full lg:w-1/2 space-y-3 lg:space-y-1" data-aos="fade-up">
         <h1 className="text-4xl lg:text-6xl xl:text-8xl font-extrabold text-BLACK_LABEL_TEXT text-center lg:text-left">
           Track the Stock Market with Confidence
         </h1>
@@ -16,7 +16,7 @@ const Hero = () => {
       </section>
 
       {/* Right side section */}
-      <section className="hidden lg:flex">
+      <section className="hidden lg:flex" data-aos="fade-down">
         <Image 
           src={'/Icons/upward-trend.png'}
           alt={'Hero Image'}
