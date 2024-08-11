@@ -11,7 +11,7 @@ const Hero = () => {
         </h1>
         <p className="text-BLACK_INFO_TEXT xl:pl-3 text-center lg:text-left">
           Effortlessly track and analyze stock performance with our real-time lookup tool. 
-          Simply enter the stock symbol you're interested in, and get instant access to up-to-the-minute data!
+          Simply enter the stock symbol you&apos;re interested in, and get instant access to up-to-the-minute data!
         </p>
       </section>
 
