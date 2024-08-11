@@ -148,7 +148,7 @@ const Data = () => {
             <div className="flex flex-col space-y-5">
               <div className="flex flex-col lg:flex-row justify-between w-full">
                 <div className="flex flex-col w-1/2">
-                  <h1 className="text-4xl font-bold text-BLACK_LABEL_TEXT">{stockData?.description}</h1>
+                  <h1 className="text-2xl lg:text-4xl font-bold text-BLACK_LABEL_TEXT">{stockData?.description}</h1>
                   <label className="text-md text-BLACK_INFO_TEXT">{stockData?.symbol}</label>
                 </div>
                 <div className="flex flex-col lg:items-end w-fit lg:w-1/2 mt-2 lg:mt-0">
