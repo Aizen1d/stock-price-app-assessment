@@ -1,0 +1,1 @@
+export const finnhubBaseURL = "https://finnhub.io/api/v1"
