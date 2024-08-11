@@ -1,29 +1,54 @@
 "use client";
 
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import Link from "next/link";
+
+const Links = [
+  {
+    title: "Home",
+    sectionId: "hero-section",
+  },
+  {
+    title: "Get Started",
+    sectionId: "data-section",
+  },
+  {
+    title: "About",
+    sectionId: "acknowledgement-section",
+  },
+];
 
 const Header = () => {
-  const path = usePathname()
+  const handleScroll = (e: any, sectionId: any) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <header className="flex justify-between items-center h-16 w-full">
+    <header className={`sticky top-0 z-10 flex justify-between items-center h-16 w-full 
+                      bg-NAVBAR border-[#838383] border-b rounded-b-xl px-10`}>
       <nav className="flex">
-        <ul>
-          <Link 
-            href="/" 
-            className={`${path === '/' ? 'font-bold' : 'font-normal'}`}
-          >
-            Home
-          </Link>
+        <ul className="flex gap-x-16">
+          {Links.map((link, index) => (
+            <li key={index}>
+              <Link 
+                href={`#${link.sectionId}`}
+                className="text-BLACK_LABEL_TEXT hover:text-BLACK_INFO_TEXT" 
+                onClick={(e) => handleScroll(e, link.sectionId)}
+              >
+                {link.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
 
       <div>
-
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
