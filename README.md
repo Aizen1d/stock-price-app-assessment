@@ -3,6 +3,7 @@
 
 Hello! thank you for the opportunity given to me to showcase my skills building this web application that involves fetching third party API and creating user friendly UI.
 
+Here is the website link: https://stock-assessment-reataza.vercel.app/
 
 ## Installation
 
