@@ -27,15 +27,15 @@ const Header = () => {
   };
 
   return (
-    <header className={`sticky top-0 z-10 flex justify-between items-center h-16 w-full 
+    <header className={`sticky top-0 z-10 flex justify-center lg:justify-between items-center h-16 w-full 
                       bg-NAVBAR border-[#838383] border-b rounded-b-xl px-10`}>
       <nav className="flex">
-        <ul className="flex gap-x-16">
+        <ul className="flex justify-center items-center gap-x-16">
           {Links.map((link, index) => (
             <li key={index}>
               <Link 
                 href={`#${link.sectionId}`}
-                className="text-BLACK_LABEL_TEXT hover:text-BLACK_INFO_TEXT" 
+                className="text-BLACK_LABEL_TEXT hover:text-BLACK_INFO_TEXT text-sm lg:text-md" 
                 onClick={(e) => handleScroll(e, link.sectionId)}
               >
                 {link.title}
