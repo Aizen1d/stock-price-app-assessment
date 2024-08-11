@@ -121,13 +121,15 @@ const Data = () => {
           {loading && (
             <>
               <div className="flex flex-col space-y-3">
-                <Skeleton className="h-8 w-1/3" />
-                <Skeleton className="h-6 w-1/6" />
+                <Skeleton className="h-8 w-1/2 lg:w-1/3" />
+                <Skeleton className="h-6 w-1/3 lg:w-1/6" />
+                <Skeleton className="h-6 w-full lg:hidden" />
+                <Skeleton className="h-8 w-1/3 lg:hidden" />
               </div>
               <div className="flex flex-col lg:flex-row gap-x-5 gap-y-5 mt-7">
-                <Skeleton className="h-[150px] w-1/3" />
-                <Skeleton className="h-[150px] w-1/3" />
-                <Skeleton className="h-[150px] w-1/3" />
+                <Skeleton className="h-[150px] w-full lg:w-1/3" />
+                <Skeleton className="h-[150px] w-full lg:w-1/3" />
+                <Skeleton className="h-[150px] w-full lg:w-1/3" />
               </div>
             </>
           )}

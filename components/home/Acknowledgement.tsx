@@ -10,8 +10,8 @@ const Acknowledgement = () => {
           <a href="https://finnhub.io/" target="_blank" rel="noreferrer">Finnhub Stock API</a>
         </span>
       </h1>
-      <div className="w-[70%]">
-        <p className="text-BLACK_INFO_TEXT xl:pl-3 text-center">
+      <div className="w-[90%] lg:w-[70%]">
+        <p className="text-BLACK_INFO_TEXT xl:pl-3 text-start lg:text-center">
           This assessment project is powered by the Finnhub Stock API. 
           Democratize Financial Data with the most powerful stock API on the market.
           Access real-time stock API, institutional-grade fundamental and alternative data to supercharge your investment for FREE.
